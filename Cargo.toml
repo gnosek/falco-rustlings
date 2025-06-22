@@ -30,4 +30,4 @@ publish = false
 [dependencies]
 falco_plugin = "0.4.3"
 falco_plugin_runner = "0.4.3"
-rand = "0.8.5"
+rand = "0.9.1"

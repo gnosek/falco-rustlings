@@ -57,8 +57,8 @@ impl SourcePluginInstance for RandomGenPluginInstance {
         _plugin: &mut Self::Plugin,
         batch: &mut EventBatch,
     ) -> Result<(), Error> {
-        let mut rng = rand::thread_rng();
-        let num: u64 = rng.gen();
+        let mut rng = rand::rng();
+        let num: u64 = rng.random();
 
         let event = num.to_le_bytes().to_vec();
 
